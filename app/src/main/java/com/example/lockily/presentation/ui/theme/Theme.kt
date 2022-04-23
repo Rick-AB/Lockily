@@ -1,4 +1,4 @@
-package com.example.lockily.ui.theme
+package com.example.lockily.presentation.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
