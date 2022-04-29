@@ -1,4 +1,4 @@
-package com.example.lockily.presentation.ui.theme
+package com.example.lockily.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

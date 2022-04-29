@@ -1,0 +1,104 @@
+{
+  ConstraintSets: {
+    start: {
+      title: {
+        top: [
+          'collapsing_header',
+          'top'
+        ],
+        bottom: [
+          'collapsing_header',
+          'bottom'
+        ],
+        start: [
+          'collapsing_header',
+          'start'
+        ],
+        end: [
+          'collapsing_header',
+          'end'
+        ],
+        custom: {
+          textSize: 28
+        }
+      },
+      collapsing_header: {
+        width: 'spread',
+        height: 250,
+        start: [
+          'parent',
+          'start'
+        ],
+        end: [
+          'parent',
+          'end'
+        ]
+      },
+      content: {
+        width: 'spread',
+        top: [
+          'collapsing_header',
+          'bottom'
+        ],
+        start: [
+          'parent',
+          'start'
+        ],
+        end: [
+          'parent',
+          'end'
+        ]
+      }
+    },
+    end: {
+      title: {
+        width: 'spread',
+        top: [
+          'collapsing_header',
+          'top',
+          16
+        ],
+        bottom: [
+          'collapsing_header',
+          'bottom',
+          16
+        ],
+        start: [
+          'collapsing_header',
+          'start',
+          16
+        ],
+        custom: {
+          textSize: 14
+        }
+      },
+      collapsing_header: {
+        width: 'spread',
+        height: 56,
+        start: [
+          'parent',
+          'start'
+        ],
+        end: [
+          'parent',
+          'end'
+        ]
+      },
+      content: {
+        width: 'spread',
+        top: [
+          'collapsing_header',
+          'bottom'
+        ],
+        start: [
+          'parent',
+          'start'
+        ],
+        end: [
+          'parent',
+          'end'
+        ]
+      }
+    }
+  }
+}

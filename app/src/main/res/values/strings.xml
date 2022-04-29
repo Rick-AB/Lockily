@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Lockily</string>
+    <string name="lockily_pass">Lockily\nPass</string>
+    <string name="scan_fingerprint_prompt">Scan your fingerprint to verify your identity</string>
+    <string name="tap_to_scan">Tap the icon to scan your fingerprint</string>
+    <string name="ids_and_password">IDs and passwords</string>
+    <string name="ids_and_passwords_desc">Use biometrics for quick, secure access to apps and services</string>
+    <string name="private_info">Private info</string>
+    <string name="private_info_desc">Safely store credit cards, addresses and other personal info</string>
+    <string name="apps">Apps</string>
+    <string name="websites">Websites</string>
+    <string name="manual_add">Manually Added</string>
+    <string name="biometric_prompt">Biometric login for Lockily</string>
+    <string name="use_password">Use password</string>
 </resources>
