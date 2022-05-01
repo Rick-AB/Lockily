@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Lockily</string>
     <string name="lockily_pass">Lockily\nPass</string>
+    <string name="home_title">Lockily Pass</string>
     <string name="scan_fingerprint_prompt">Scan your fingerprint to verify your identity</string>
     <string name="tap_to_scan">Tap the icon to scan your fingerprint</string>
     <string name="ids_and_password">IDs and passwords</string>
@@ -12,4 +13,5 @@
     <string name="manual_add">Manually Added</string>
     <string name="biometric_prompt">Biometric login for Lockily</string>
     <string name="use_password">Use password</string>
+    <string name="manual_add_prompt">Manually add sign-in info so you can enter it directly using the Samsung Keyboard toolbar</string>
 </resources>

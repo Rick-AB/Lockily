@@ -1,8 +1,8 @@
-package com.example.lockily.presentation.home
+package com.example.lockily.presentation.credentials
 
 import com.example.lockily.domain.models.Credential
 
-data class HomeScreenState(
+data class CredentialScreenState(
     val error: String? = null,
     val appCredentials: List<Credential> = emptyList(),
     val websiteCredentials: List<Credential> = emptyList(),

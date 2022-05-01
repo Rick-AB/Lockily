@@ -10,10 +10,13 @@ import androidx.compose.animation.slideOutHorizontally
 import androidx.compose.runtime.Composable
 import com.example.lockily.presentation.home.component.AuthScreen
 import com.example.lockily.presentation.home.component.HomeScreen
+import com.ramcosta.composedestinations.annotation.Destination
+import com.ramcosta.composedestinations.navigation.DestinationsNavigator
 
+@Destination(start = true)
 @RequiresApi(Build.VERSION_CODES.R)
 @Composable
-fun HomeFragment(viewModel: MainViewModel) {
+fun HomeFragment(viewModel: MainViewModel, navigator: DestinationsNavigator) {
     val isAuthenticated = viewModel.isAuthenticated.value
     val state = viewModel.state
     AnimatedVisibility(
@@ -24,7 +27,7 @@ fun HomeFragment(viewModel: MainViewModel) {
             )
         )
     ) {
-        HomeScreen(state.value)
+        HomeScreen(state.value, navigator)
     }
     AnimatedVisibility(
         visible = !isAuthenticated, exit = slideOutHorizontally(

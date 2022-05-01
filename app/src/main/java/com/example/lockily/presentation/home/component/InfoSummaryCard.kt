@@ -1,6 +1,7 @@
 package com.example.lockily.presentation.home.component
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Icon
@@ -20,7 +21,8 @@ import com.example.lockily.presentation.home.CredentialItem
 fun InfoSummaryCard(
     title: String,
     description: String,
-    credentialList: List<CredentialItem>
+    credentialList: List<CredentialItem>,
+    onItemClick: (String) -> Unit
 ) {
     Column(
         Modifier
@@ -45,7 +47,8 @@ fun InfoSummaryCard(
                 iconResource = iconResource,
                 name = name,
                 count = count,
-                modifier = Modifier.padding(vertical = 24.dp)
+                modifier = Modifier.padding(vertical = 24.dp),
+                onItemClick = onItemClick
             )
         }
     }
@@ -56,9 +59,16 @@ fun CredentialItem(
     iconResource: Int,
     name: String,
     count: Int,
-    modifier: Modifier
+    modifier: Modifier,
+    onItemClick: (String) -> Unit
 ) {
-    Row(verticalAlignment = Alignment.CenterVertically, modifier = modifier.fillMaxWidth()) {
+    Row(
+        verticalAlignment = Alignment.CenterVertically,
+        modifier = modifier
+            .fillMaxWidth()
+            .clickable {
+                onItemClick(name)
+            }) {
         Icon(
             painter = painterResource(id = iconResource),
             contentDescription = "",
